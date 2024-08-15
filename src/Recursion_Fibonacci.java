@@ -6,8 +6,9 @@
 //        int[] a = {12,25,29,27,30,36,40};
 //        System.out.println(binarySearch(a,12,0,6));
 
-        System.out.println(sumOfNum(5,0));
-        System.out.println(sumOfNumber(5));
+//        System.out.println(sumOfNum(5,0));
+//        System.out.println(sumOfNumber(5));
+        System.out.println(factorial(5));
     }
     static int fib(int n){
         if (n < 2){
@@ -45,9 +46,15 @@
              return 0;
          }
 
-         int a =  sumOfNumber(n-1);
-         a += n;
-         return a;
+        return sumOfNumber(n-1) + n;
 
+     }
+     static int factorial(int n) {
+         if (n == 0) {
+             return 1;
+         }
+//         int ans = n * factorial(n-1);
+//         return ans;
+         return n * factorial(n-1);
      }
 }
